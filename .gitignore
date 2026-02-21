@@ -1,0 +1,18 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/ventus.library/ventus.library.web.api/obj
+/ventus.library/VentusLibrary.Application/bin/Debug/net8.0
+/ventus.library/VentusLibrary.Application/obj
+/ventus.library/VentusLibrary.Commons/bin/Debug/net8.0
+/ventus.library/VentusLibrary.Commons/obj
+/ventus.library/VentusLibrary.Domain/bin/Debug/net8.0
+/ventus.library/VentusLibrary.Domain/obj
+/ventus.library/VentusLibrary.Infrastructure/bin/Debug/net8.0
+/ventus.library/VentusLibrary.Infrastructure/obj
+/ventus.library/VentusLibrary.Test/bin/Debug/net8.0
+/ventus.library/VentusLibrary.Test/obj
+/ventus.library/VentusLibrary.WebApi/bin/Debug/net8.0
+/ventus.library/VentusLibrary.WebApi/obj
+/.vscode
