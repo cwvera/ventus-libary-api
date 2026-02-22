@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using VentusLibrary.Domain.Entities;
 
 namespace VentusLibrary.Infrastructure.Persistence;
 
@@ -24,4 +25,13 @@ public class VentusLibraryDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(VentusLibraryDbContext).Assembly);
     }
+
+    /// <summary>Libros.</summary>
+    public DbSet<Book> Books { get; set; }
+    /// <summary>Autores.</summary>
+    public DbSet<Author> Authors { get; set; }
+    /// <summary>Géneros.</summary>
+    public DbSet<Genre> Genres { get; set; }
+    /// <summary>Reglas de límites de libros.</summary>
+    public DbSet<BookLimit> BookLimits { get; set; }
 }

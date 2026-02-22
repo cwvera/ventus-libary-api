@@ -21,11 +21,16 @@ public class BooksController : ControllerBase
         _mediator = mediator;
     }
 
-    /// <summary>Lista libros activos.</summary>
+    /// <summary>
+    /// Lista libros activos incluyendo nombre de autor y nombre de género.
+    /// </summary>
     [HttpGet]
+    [ProducesResponseType(typeof(List<BookListItemDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> ListAsync()
     {
-        IReadOnlyList<BookDto> result = await _mediator.Send(new ListActiveBooksQuery());
+        IReadOnlyList<BookListItemDto> result = await _mediator.Send(new ListActiveBooksWithDetailsQuery());
         return Ok(result);
     }
 
