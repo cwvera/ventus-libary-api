@@ -1,6 +1,0 @@
-@ventus.library.web.api_HostAddress = http://localhost:5034
-
-GET {{ventus.library.web.api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
